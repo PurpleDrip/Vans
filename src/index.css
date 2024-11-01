@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SweraBold";
+  src: url("/fonts/Swera Bold Demo.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SweraItalic";
+  src: url("/fonts/Swera Italic Demo.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SweraRegular";
+  src: url("/fonts/Swera Regular Demo.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SweraShadowed";
+  src: url("/fonts/Swera Shadowed Demo.otf") format("opentype");
+}
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --tertiary: rgb(31 41 55 / 1);
+  --transparent: rgba(165, 162, 162, 0.233);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #000000; /*background*/
+    --secondary: #ffffff; /*text*/
+    --tertiary: rgb(31 41 55 / 1);
+    --quaternary: rgb(27, 14, 88);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: #ffffff;
+    --secondary: #ffffff;
+    --tertiary: rgb(31 41 55 / 1);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SweraRegular", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  background-color: var(--secondary);
+  position: absolute;
+  top: 50vh;
+  right: 1rem;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 0.8rem;
+}
+
+.box {
+  height: 25rem;
+  width: 42rem;
+  background-color: var(--transparent);
+}
+
+.text-container {
+  position: relative;
+  background-color: rgba(255, 0, 0, 0.5);
+  background-image: url("/images/bg-image3.png"); /* Ensure the correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  font-family: "SweraBold";
+}
+.masked-text {
+  font-family: "SweraBold";
+}
+.trend-container {
+  border: 1px solid var(--secondary);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .title-bar h1 {
+    letter-spacing: 0.3rem;
+  }
+  .trend-container {
+    margin-inline: 0.5rem;
+    margin-top: 1rem;
+  }
+  .trend-container h2 {
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+  }
+  .trend-container p {
+    font-size: 1.3rem;
+  }
+  .box {
+    width: 12rem;
+    height: 12rem;
+  }
+  .text-container h2 {
+    font-size: 6rem;
+  }
+}
