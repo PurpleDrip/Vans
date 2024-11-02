@@ -109,8 +109,14 @@ video {
   border-radius: 1rem;
   padding: 0.5rem;
 }
+.image-column-container {
+  width: calc(100vw / 3);
+}
 
 @media (max-width: 768px) {
+  .hide {
+    display: none;
+  }
   .title-bar h1 {
     letter-spacing: 0.3rem;
   }
@@ -131,5 +137,11 @@ video {
   }
   .text-container h2 {
     font-size: 6rem;
+  }
+  .parallax-header {
+    letter-spacing: 0.2rem;
+  }
+  .image-column-container {
+    width: calc(100vw / 2);
   }
 }

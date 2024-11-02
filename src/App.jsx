@@ -4,6 +4,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Hero from "./Components/Hero";
 import Trending from "./Components/Trending";
 import Layer from "./Components/Layer";
+import ParallaxImage from "./Components/ParallaxImage";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ const App = () => {
       <Hero />
       <Trending />
       <Layer />
+      <ParallaxImage />
     </>
   );
 };
