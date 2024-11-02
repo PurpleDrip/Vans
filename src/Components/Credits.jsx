@@ -17,7 +17,10 @@ const Credits = () => {
           <a href="https://github.com/purpledrip" target="_blank">
             <img src="images/github.png" alt="Github" />
           </a>
-          <a href="https://www.linkedin.com/in/purpledrip/">
+          <a
+            href="https://www.linkedin.com/in/gurupreethnagesha"
+            target="_blank"
+          >
             <img src="images/linkedin.png" alt="LinkedIn" />
           </a>
         </div>
