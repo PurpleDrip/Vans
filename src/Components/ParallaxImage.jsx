@@ -4,7 +4,7 @@ import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 const ParallaxImage = () => {
   return (
     <ParallaxProvider>
-      <h1 className="text-center text-4xl text-[--secondary] mt-32 tracking-[3rem] parallax-header">
+      <h1 className="text-center text-4xl text-[--secondary] mt-32 tracking-[3rem] parallax-header relative">
         VANS GALLERY
       </h1>
       <div className="flex h-[200vh] mt-20 parallax-container">

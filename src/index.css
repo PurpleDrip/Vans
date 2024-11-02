@@ -112,6 +112,16 @@ video {
 .image-column-container {
   width: calc(100vw / 3);
 }
+.parallax-header::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% / 3);
+  height: 3%;
+  background-color: var(--secondary);
+}
 
 @media (max-width: 768px) {
   .hide {
