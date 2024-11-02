@@ -61,12 +61,12 @@ const Scene = ({ modelPath, scale, color }) => {
     <>
       <color attach="background" args={["#1f1f1f"]} />
       <fog attach="fog" args={["#1f1f1f", 5, 15]} />
-      <ambientLight intensity={1} />
+      <ambientLight intensity={10} />
       <SpotLight
         position={[10, 10, 10]}
         angle={0.5}
         penumbra={0.5}
-        intensity={10}
+        intensity={30}
         castShadow
         shadow-mapSize={[2048, 2048]}
         shadow-bias={-0.0001}
