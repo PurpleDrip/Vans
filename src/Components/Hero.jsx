@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -6,6 +6,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const titleBarRef = useRef(null);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    videoRef.current.muted = false;
+    console.log(window.scrollY);
+    const handleScroll = () => {
+      console.log(window.scrollY);
+      videoRef.current.muted = window.scrollY !== 0;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     gsap.from(titleBarRef.current, {
@@ -21,7 +37,6 @@ const Hero = () => {
       textAlign: "center",
       borderRadius: "2rem",
       letterSpacing: "0rem",
-      // width: "calc(100% - 2rem)",
       fontSize: window.matchMedia("(min-width: 768px)").matches
         ? "1rem"
         : "0.8rem",
@@ -41,9 +56,10 @@ const Hero = () => {
     <div className="relative">
       <div className="h-screen">
         <video
+          ref={videoRef}
           src="/videos/hero.webm"
           autoPlay
-          muted
+          muted={true}
           loop
           className="w-full h-full object-cover"
         />
