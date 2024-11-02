@@ -25,10 +25,9 @@ const Credits = () => {
       <div className="credits-card h-[50vh] w-[30vw] bg-indigo-600 flex flex-col items-center justify-center gap-8 rounded-lg">
         <img src="images/Skeleton.jpeg" alt="" className="h-3/5 rounded-full" />
         <div className="card-text flex flex-col items-center ">
-          <h1 className="text-4xl text-[--secondary] tracking-widest">
+          <h1 className="text-4xl text-[--secondary] tracking-widest text-outline">
             Purple Drip
           </h1>
-          <h1 className="text-xl text-[--secondary]">Web Developer</h1>
         </div>
       </div>
     </div>
