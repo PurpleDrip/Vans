@@ -1,4 +1,6 @@
 import React from "react";
+import { ImLinkedin } from "react-icons/im";
+import { FaSquareGithub } from "react-icons/fa6";
 
 const Credits = () => {
   return (
@@ -15,13 +17,13 @@ const Credits = () => {
         </p>
         <div className="links flex gap-8 mt-20 mx-auto">
           <a href="https://github.com/purpledrip" target="_blank">
-            <img src="images/github.png" alt="Github" />
+            <FaSquareGithub size={40} />
           </a>
           <a
             href="https://www.linkedin.com/in/gurupreethnagesha"
             target="_blank"
           >
-            <img src="images/linkedin.png" alt="LinkedIn" />
+            <ImLinkedin size={36} />
           </a>
         </div>
       </div>
