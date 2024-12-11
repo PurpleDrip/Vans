@@ -75,5 +75,5 @@ Distributed under the MIT License. See the `LICENSE` file in the repository for 
 
 ## Contact
 
-Your Name - [gurupreethnagesha@gmail.com](mailto:gurupreethnagesha@gmail.com)  
+Gurupreeth N - [gurupreethnagesha@gmail.com](mailto:gurupreethnagesha@gmail.com)  
 Project Link: [VANS](https://vans-landing.pages.dev/)
